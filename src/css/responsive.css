@@ -1,0 +1,22 @@
+@media (max-width: 700px) {
+    :root {
+        --marquee-width: 100%;
+        --marquee-display-num: 3;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    #about .main-details {
+        flex-direction: column;
+        width: auto;
+        justify-content: center;
+        margin-bottom: 2.5rem;
+        margin-top: 3.5rem;
+    }
+
+    .review-carousel {
+        overflow: hidden;
+    }
+}

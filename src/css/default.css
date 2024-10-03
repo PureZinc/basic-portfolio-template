@@ -1,0 +1,99 @@
+* *::before *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Hind', 'sans-seriff';
+}
+
+main, section, header, footer {
+    display: block;
+}
+
+section {
+    margin: 2.5rem auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+p {
+    line-height: 0%;
+    color: var(--text-color);
+}
+
+.container {
+    max-width: auto;
+}
+
+.btn {
+    padding: 10px 30px;
+    margin: 15px 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 175px;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    border-radius: 20px;
+    background-color: var(--blueish-color);
+    color: white;
+}
+
+.change-theme {
+    position: fixed;
+    right: 0;
+    top: 25%;
+    transition: 0.4s;
+    transform: translate(100%);
+    z-index: 100;
+}
+
+.change-theme.open {
+    transform: translate(0%);
+}
+
+.theme-body {
+    padding: 15px;
+    background-color: var(--blueish-color);
+    border-bottom-left-radius: 25px;
+}
+
+.theme-body .button-group {
+    background-color: #fff;
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.theme-switcher {
+    background: transparent;
+    border: none;
+    width: 50%;
+    text-transform: uppercase;
+}
+
+.theme-switcher.active {
+    background-color: rgb(205, 205, 205);
+}
+
+#theme-tab {
+    position: absolute;
+    top: 0;
+    transform: translate(-150%);
+    width: 20px;
+    height: 30px;
+    background-color: var(--blueish-color);
+    border: none;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
