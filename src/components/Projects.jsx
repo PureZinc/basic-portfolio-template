@@ -9,7 +9,7 @@ export default function Projects({searchFilter, categoryFilter}) {
     const ProjectCard = (proj, index) => {
         return (
             <div className="project-card" key={index}>
-                <img alt={proj.name} />
+                <img src={proj.image} alt={proj.name} />
                 <div className="card-pop-up" onClick={() => setSelectedProject(proj)}>
                     <div>{proj.category}</div>
                     <h3>{proj.name}</h3>

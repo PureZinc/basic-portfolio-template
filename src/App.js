@@ -2,6 +2,8 @@ import Navbar from "./components/Navbar";
 import PortfolioSection from "./sections/PortfolioSection";
 import ReviewCarousel from "./components/ReviewCarousel";
 
+import { website } from "./Data";
+
 function App() {
   return (
     <main>
@@ -15,13 +17,10 @@ function App() {
                 <div className="code-icon">
                     <i className="fas fa-code"></i>
                 </div>
-                <h2 className="header-lg">Code. Eat. Sleep</h2>
-                <div className="header-sm">
-                    I create meaningful solutions to your brand and products.
-                    Give your customers the best experience possible.
-                </div>
+                <h2 className="header-lg">{website.heroHeaderLG}</h2>
+                <div className="header-sm">{website.heroHeaderSM}</div>
                 <div className="btn btn-primary">
-                    <a href="/" data-open="about">Let's Talk Now</a>
+                    <a href={website.CTALink}>{website.CTA}</a>
                 </div>
             </div>
         </div>
