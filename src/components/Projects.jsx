@@ -2,6 +2,7 @@ import { projects } from "../Data";
 import ProjectModal from "./modals/ProjectModal";
 import { useState } from "react";
 
+
 export default function Projects({searchFilter, categoryFilter}) {
     const [selectedProject, setSelectedProject] = useState(null);
     
