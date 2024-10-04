@@ -11,7 +11,7 @@ export default function ProjectModal({ projectState }) {
               </header>
               <div className="modal-body">
                 <div className="project-card">
-                  <img alt={proj.name} />
+                  <img src={proj.image} alt={proj.name} />
                 </div>
                 <div className="modal-text">
                   <h2>{proj.name}</h2>

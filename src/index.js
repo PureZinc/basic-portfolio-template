@@ -6,12 +6,12 @@ import './css/styles.css';
 import './css/responsive.css';
 import './css/theme.css';
 
-import App from './App';
+import AppRouter from './Router';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <AppRouter />
   </React.StrictMode>
 );
 

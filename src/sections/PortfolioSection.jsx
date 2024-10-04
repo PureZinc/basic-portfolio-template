@@ -1,10 +1,11 @@
 import {useState} from 'react';
 import Projects from '../components/Projects';
-import { categories } from "../Data";
 
-export default function PortfolioSection() {
+export default function PortfolioSection({data}) {
     const [projectSearch, setProjectSearch] = useState('');
     const [categorySearch, setCategorySearch] = useState('');
+
+    const categories = [...new Set(data.projects.map((proj) => proj.category))];
 
     const filterBySearch = () => {
         const searchValue = document.getElementById('search').value;
@@ -37,7 +38,7 @@ export default function PortfolioSection() {
                 ))}
             </ul>
         </div>
-        <Projects searchFilter={projectSearch} categoryFilter={categorySearch} />
+        <Projects searchFilter={projectSearch} categoryFilter={categorySearch} data={data} />
     </section>
   )
 }

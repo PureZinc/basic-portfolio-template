@@ -1,9 +1,7 @@
 import PageModalContainer from "./PageModalContainer";
-import { me } from "../../Data";
 import { useEffect, useRef } from 'react';
 
-export default function About({isOpenState}) {
-
+export default function About({isOpenState, data}) {
     const icons = ["github", "android", "codepen", "dev", "react", "vuejs", "angular", "node", "docker"]
 
     const Marquee = () => {
@@ -38,11 +36,11 @@ export default function About({isOpenState}) {
     <PageModalContainer id="about" title="About Me" isOpenState={isOpenState}>
         <div className="main-details">
             <div className="pfp">
-                <img src={me.profilePic} alt={me.name} />
+                <img src={data.me.profilePic} alt={data.me.name} />
             </div>
             <div className="block-text">
-                <h2>{me.name}</h2>
-                <p>{me.description}</p>
+                <h2>{data.me.name}</h2>
+                <p>{data.me.description}</p>
             </div>
         </div>
         <Marquee />

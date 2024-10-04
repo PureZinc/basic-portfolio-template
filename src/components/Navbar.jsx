@@ -1,9 +1,8 @@
 import { useState } from 'react'
 import About from './modals/About';
 import Contact from './modals/Contact';
-import { website } from '../Data';
 
-export default function Navbar() {
+export default function Navbar({data}) {
     const [aboutOpen, setAboutOpen] = useState(false);
     const [contactOpen, setContactOpen] = useState(false);
 
@@ -11,7 +10,7 @@ export default function Navbar() {
     <>
     <nav>
         <div className="nav-header">
-            <h3>{website.title}</h3>
+            <h3>{data.website.title}</h3>
         </div>
         <div className="nav-links">
             <ul>
@@ -20,7 +19,7 @@ export default function Navbar() {
             </ul>
         </div>
     </nav>
-    <About isOpenState={[aboutOpen, setAboutOpen]} />
+    <About isOpenState={[aboutOpen, setAboutOpen]} data={data} />
     <Contact isOpenState={[contactOpen, setContactOpen]} />
     </>
   )

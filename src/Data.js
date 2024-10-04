@@ -85,63 +85,39 @@ const myData = {
     website: {
         title: "Galupidev",
         heroHeaderLG: "Code. Eat. Sleep",
-        heroHeaderSM: "I create meaningful solutions to your brand and products. Give your customers the best experience possible.",
-        CTA: "Let's Talk Now",
+        heroHeaderSM: "I am a technologist dedicated to making the best product for your business.",
+        CTA: "Take a Look",
         CTALink: "https://galupidev.vercel.app/"
     },
     me: {
         name: "Nicholas Galupi",
-        description: "Hello! I am Nicholas Galupi! How's it goin'",
+        description: "My Name is Nicholas Galupi. I'm an Engineer, Salesman, and Tech Enthusiast.",
         profilePic: "/me/PFPfilter.png",
     },
     projects: [
         {
-            name: 'Project1',
+            name: 'Stoistrom',
             category: 'full-stack',
-            description: 'Describe the project! i fwhuew wexmweomcfom!',
-            image: '/'
+            description: 'Stoistrom is a self-improvement app for cleaning your life!',
+            image: '/me/Stoistrom.jpg'
         },
         {
-            name: 'Project2',
+            name: 'Cyberspace',
+            category: 'artificial-intelligence',
+            description: 'Cybserspace is like Twitter for AI Bots.',
+            image: '/me/Robot.webp'
+        },
+        {
+            name: 'Front',
             category: 'landing-page',
-            description: 'Describe the project! i fwhuew wexmweomcfom!',
+            description: 'Built a landing page for a business.',
             image: '/'
         },
         {
-            name: 'Project3',
-            category: 'mobile-apps',
-            description: 'Describe the project! i fwhuew wexmweomcfom!',
-            image: '/'
-        },
-        {
-            name: 'Project4',
-            category: 'landing-page',
-            description: 'Describe the project! i fwhuew wexmweomcfom!',
-            image: '/'
-        },
-        {
-            name: 'Project5',
-            category: 'landing-page',
-            description: 'Describe the project! i fwhuew wexmweomcfom!',
-            image: '/'
-        },
-        {
-            name: 'Project6',
+            name: 'Explore Mars',
             category: 'full-stack',
-            description: 'Describe the project! i fwhuew wexmweomcfom!',
-            image: '/'
-        },
-        {
-            name: 'Project7',
-            category: 'landing-page',
-            description: 'Describe the project! i fwhuew wexmweomcfom!',
-            image: '/'
-        },
-        {
-            name: 'Project8',
-            category: 'landing-page',
-            description: 'Describe the project! i fwhuew wexmweomcfom!',
-            image: '/'
+            description: 'Ever wondered what happens on Mars? This website gives you the real-time experience!',
+            image: '/me/Mars.jpg'
         }
     ],
     reviews: [
@@ -163,8 +139,4 @@ const myData = {
     ]
 }
 
-export const website = templateData.website;
-export const me = templateData.me;
-export const projects = templateData.projects;
-export const reviews = templateData.reviews;
-export const categories = [...new Set(templateData.projects.map((proj) => proj.category))];
+export const data = {templateData, myData};

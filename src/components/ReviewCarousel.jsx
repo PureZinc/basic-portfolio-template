@@ -1,7 +1,6 @@
-import { reviews } from "../Data"
 import { useState } from "react";
 
-export default function ReviewCarousel() {
+export default function ReviewCarousel({data}) {
     const [moveItems, setMoveItems] = useState(0);
 
     const ReviewItem = (rev, index) => {
@@ -27,7 +26,7 @@ export default function ReviewCarousel() {
   return (
     <>
         <div className="review-carousel" id="reviews">
-            {reviews.map((rev, index) => (
+            {data.reviews.map((rev, index) => (
                 ReviewItem(rev, index)
             ))}
         </div>
